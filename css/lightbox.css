@@ -1,0 +1,246 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+.wrap{
+    width:100%;
+    height: auto;
+    
+}
+.wrap>h2{
+    text-align: center;
+    font-size: 35px;
+    line-height: 60px;
+    font-family:sans-serif;
+    letter-spacing:2px; 
+}
+.wrap>div.row{
+    position:relative;
+    width: 100%;
+    
+}
+.row>div{
+    
+    float: left;
+    width: 25%;
+    height:250px;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+ }
+ .row>div>img{
+    width:100%;
+    height:200px;
+ }
+ .row>div>img:hover{
+    box-shadow:0 0 20px 5px gray;    
+    cursor: pointer;
+}
+ .modal{
+     position: absolute;
+     top:0;
+     left:0;
+     right: 0;
+     bottom: 0;
+     display: none;
+     background-color:rgba(0,0,0,.9);
+ }
+ .modalContent{
+     position:relative;
+     width:610px;
+     height:600px;
+     margin:100px auto;
+ }
+ .closeBut{
+     position:absolute;
+     left:110%;
+     top:-80px;
+     font-size: 50px;
+     color:white;
+    
+     
+ }
+ .closeBut:focus,
+ .closeBut:hover{
+     cursor: pointer;
+    
+     text-shadow: 0 0 20px rgba(255, 255, 255, 0.781);
+ }
+ /*  */
+
+ .modalDivPa{
+    width:600px;
+    height:340px;
+    margin: 0 auto;
+    overflow:hidden;
+ }
+
+
+ .modalDiv{
+     position: relative;
+     width:100%;
+     height:350px;
+     perspective:100000000px;
+     transform-style: preserve-3d;
+     transition: transform 5s linear;
+     /* animation: aa 20s linear; */
+ }
+ /* @keyframes aa{
+     from{
+         transform: rotateY(0deg);
+     }
+     to{
+         transform:rotateY(360deg);
+     }
+ } */
+ .modalDiv>img{
+    position: absolute;
+    z-index: 10;
+    top:0;
+    left:0;
+    width:600px;
+    height:100%;
+    transform-origin:50% 50% -300px;
+    /* backface-visibility:visible; */
+    
+
+ }
+ .img1{
+    transform:translateZ(300px) rotateY(0deg);
+   
+ }
+.img2{ 
+     transform: translateZ(300px) rotateY(-90deg);
+     
+ }
+ .img3{ 
+    transform: translateZ(300px) rotateY(-180deg);
+    
+}
+.img4{ 
+    transform: translateZ(300px) rotateY(90deg);
+    
+}
+
+
+
+
+
+
+
+
+/*  */
+ .modalDiv img:hover{
+     cursor: pointer;
+     
+     
+     
+ }
+ 
+ .smallPic{
+     width: 100%;
+     height:100px;
+     margin-top:10px;
+     
+ }
+ .smallPic>ul{
+     list-style: none;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     
+ }
+ .smallPic>ul>li{
+     position:relative;
+     display: inline-block;
+     width:20px;
+     height:20px;
+     margin-left: 10px;
+     border-radius: 50%;
+     background-color: white;
+
+ }
+ .smallPic>ul>li:hover{
+     cursor: pointer;
+ }
+ .smallPic>ul>li:hover::after{
+      content: "";
+      position:absolute;
+      top:0;
+      left: 0;
+      bottom: 0;
+      right: 0; 
+      margin:auto;
+      width:0px;
+      height:0px; 
+      border-radius: 50%;
+      background-color:rgb(94, 157, 209);
+      animation: coming 1s ease-in infinite;
+
+ }
+ @-webkit-keyframes coming{
+    form{
+        width:0px;
+        height:0px;  
+        opacity: 1;
+        filter:Alpha(opacity=100);
+    }
+    to{
+        width:40px;
+        height:40px;
+        opacity: 0;
+        filter:Alpha(opacity=0);
+    }
+ }
+ @keyframes coming{
+    form{
+        width:0px;
+        height:0px;
+        opacity:0.3;
+        filter:Alpha(opacity=30);
+    }
+    to{
+        width: 40px;
+        height:40px;
+        opacity: 0;
+        filter:Alpha(opacity=0);
+    }
+ }
+ .otherBut-l,
+ .otherBut-r{
+     position: absolute;
+     top:25%;
+     width:70px;
+     height:70px;
+     line-height:60px;
+     text-align: center;
+     color:white;
+     font-size:70px;
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box; 
+ }
+ .otherBut-l{
+     left:0;
+ }
+ .otherBut-r{
+     right:0;
+ }
+ .otherBut-l:hover,
+ .otherBut-r:hover{
+     cursor:pointer;
+     background-color:rgba(0, 0, 0, 0.5);
+ }
+ .closeBut::-moz-selection,
+ .modalContent>span::-moz-selection{
+    background-color:transparent;
+}
+.closeBut::selection,
+.modalContent>span::selection{
+    background-color:transparent;
+}

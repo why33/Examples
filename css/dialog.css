@@ -1,0 +1,277 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    height: 100%;
+}
+.dialogBut{
+    display: none;
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.404);
+   
+}
+.dialogContent0{
+    width:800px;
+    height: auto;
+    background-color: white;
+    margin:15% auto;
+    padding: 15px;
+}
+.closeSty0{
+    float: right; 
+    font-size: 18px;
+    font-family: cursive;
+    font-weight: bolder;
+    color:rgba(0, 0, 0, 0.404);
+}
+.closeSty0:focus,
+.closeSty0:hover{
+    color:black;
+    cursor: pointer;
+}
+.dialogContent1{
+    position:relative;
+    width: 800px;
+    height:auto;
+    margin:15% auto;
+    background-color:white;
+    overflow: auto;
+    box-shadow: 0px 0px 12px  2px rgba(0, 0, 0, 0.4);
+    -webkit-animation: animationTop 2s ease-in-out;
+    -moz-animation: animationTop 2s ease-in-out;
+    -o-animation: animationTop 2s ease-in-out;
+    animation:animationTop 2s ease-in-out;
+}
+@-webkit-keyframes animationTop{
+    from{
+        top:-300px;
+        opacity: 0;
+        filter:Alpha(opacity=0);
+    }
+    70%{
+        top:0px;
+    }
+    75%{
+        top:-40px;
+    }
+    80%{
+        top:-0px;
+    }
+    85%{
+        top:-30px;
+    }
+    90%{
+        top:0px;
+    }
+    95%{
+        top:-20px;
+    }
+    to{
+        top: 0;
+        opacity: 1;
+        filter:Alpha(opacity=100);
+    }
+}
+@keyframes animationTop{
+    from{
+        top:-300px;
+        opacity: 0;
+        filter:Alpha(opacity=0);
+    }
+    70%{
+        top:0px;
+    }
+    75%{
+        top:-40px;
+    }
+    80%{
+        top:-0px;
+    }
+    85%{
+        top:-30px;
+    }
+    90%{
+        top:0px;
+    }
+    95%{
+        top:-20px;
+    }
+    to{
+        top: 0;
+        opacity: 1;
+        filter:Alpha(opacity=100);
+    }
+}
+.dialogHead{
+    width: 100%;
+    height:60px;
+    background-color:lightgreen;
+    color:white;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 20px;
+    font-size:20px;
+}
+.closeSty1{
+    float: right;
+    font-size:50px;
+   
+    color:gray;
+    line-height:30px;
+}
+.closeSty1:focus,
+.closeSty1:hover{
+    cursor:pointer;
+    color:white;
+}
+.dialogBoy{
+    width: 100%;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding:20px;
+    font-size:20px;
+}
+.dialogFoot{
+    width: 100%;
+    height:70px;
+    margin-top:30px;
+   
+}
+.closeSty2{
+    float: right;
+    margin-right: 20px;
+    font-size: 25px;
+    line-height: 50px;
+    border:none;
+    outline: none;
+    color:gray;
+    padding: 0 10px;
+    background-color: lightgreen;
+    border-radius: 5px;
+
+}
+.closeSty2:focus,
+.closeSty2:hover{
+    cursor: pointer;
+    color: white;
+}
+.closeSty1:-moz-selection,
+.closeSty2:-moz-selection,
+.dialogHead>h1::-moz-selection{
+    background-color:transparent;
+}
+.closeSty1::selection,
+.closeSty2::selection,
+.dialogHead>h1::selection{
+    background-color:transparent;
+}
+/* picture */
+.dialogImg{
+    position:fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, .9);
+
+}
+.closeSty3{
+    float: right;
+    padding: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing:border-box;
+    margin-right:100px;
+    margin-top: 100px;
+    font-size: 50px;
+    color:white;
+    line-height:45px;
+    
+}
+.dialogImg>img{  
+    display: block;
+    width: 60%;
+    height:40%;
+    margin: 15% auto;
+    box-shadow: 0 5px 12px 5px rgba(0, 0, 0, .4);
+    -webkit-animation: movePic 2s linear;
+    -moz-animation: movePic 2s linear;
+    -o-animation: movePic 2s linear;
+    animation: movePic 2s linear;
+}
+@-webkit-keyframes movePic{
+    from{
+        -webkit-transform: scale(0,0);
+        -moz-transform: scale(0,0);
+        -ms-transform:scale(0,0);
+        -o-transform:scale(0,0);
+        opacity: 0;
+        filter:Alpha(opacity=0);
+    }
+    to{
+        -webkit-transform:scale(1,1);
+        -moz-transform:scale(1,1);
+        -ms-transform:scale(1,1);
+        -o-transform:scale(1,1);
+        transform:scale(1,1);
+        opacity: 1;
+        filter:Alpha(opacity=100);
+    }
+}
+@keyframes movePic{
+    from{
+        -webkit-transform: scale(0,0);
+        -moz-transform: scale(0,0);
+        -ms-transform:scale(0,0);
+        -o-transform:scale(0,0);
+        opacity: 0;
+        filter:Alpha(opacity=0);
+    }
+    to{
+        -webkit-transform:scale(1,1);
+        -moz-transform:scale(1,1);
+        -ms-transform:scale(1,1);
+        -o-transform:scale(1,1);
+        transform:scale(1,1);
+        opacity: 1;
+        filter:Alpha(opacity=100);
+    }
+}
+.imgSty{
+    vertical-align: middle;
+    border-radius: 5px;
+}
+.closeSty3{
+    border: none;
+}
+.closeSty3::-moz-selection{
+    background-color: transparent;
+}
+.closeSty3::selection{
+    background-color: transparent;
+    
+}
+.closeSty3:focus,
+.closeSty3:hover,
+.imgSty:focus,
+.imgSty:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    filter:Alpha(opacity=80);
+    border:2px solid white;
+    border-radius:5px;
+    
+}
