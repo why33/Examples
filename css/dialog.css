@@ -275,3 +275,83 @@ html{
     border-radius:5px;
     
 }
+.tip{
+    visibility: hidden;
+    position: fixed;
+    top:80%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 10;
+    width: 400px;
+    background-color:rgb(48, 46, 46);
+    font-size:20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height:60px;
+    color: white;
+    text-align: center;
+    border-radius:2px;
+}
+.tipActive{  
+    visibility: visible;  
+    -webkit-animation: tipMove 2s ease-in-out forwards,fadeOut 1s ease-in 3s;
+    -moz-animation: tipMove 2s ease-in-out forwards,fadeOut 1s ease-in 3s;
+    -o-animation: tipMove 2s ease-in-out forwards,fadeOut 1s ease-in 3s;
+    animation: tipMove 2s ease-in-out forwards,fadeOut 1s ease-in 3s;
+}
+@-webkit-keyframes tipMove{
+    from{
+        top:120%;
+        
+        opacity: 0;
+        filter:Alpha(opacity=0);
+    }
+    to{
+        top:80%;
+       
+        opacity: 1;
+        filter: Alpha(opacity=100);
+    }
+}
+@keyframes  tipMove{
+    from{
+        top: 120%;
+       
+        opacity: 0;
+        filter:Alpha(opacity=0);
+    }
+    to{
+        top: 80%;
+       
+        opacity: 1;
+        filter: Alpha(opacity=100);
+    }
+}
+@-webkit-keyframes fadeOut{
+     from{
+         top:80%;
+         
+         opacity: 1;
+         filter: Alpha(opacity=100);
+     }
+     to{
+         top: 120%;
+         visibility: hidden;
+         opacity:0;
+         filter: Alpha(opacity=0);
+     }
+}
+@keyframes fadeOut{
+    from{
+        top:80%;
+      
+        opacity: 1;
+        filter: Alpha(opacity=100);
+    }
+    to{
+        top:120%;
+       
+        opacity:0;
+        filter: Alpha(opacity=10);
+    }
+}

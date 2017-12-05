@@ -31,4 +31,11 @@ window.onload=function(){
     function closeButton(){
         $('#dialogAction1').style.display='none';
     }
+    $('#butDialog2').onclick=function(){ 
+        $('.tip').className+=' tipActive';
+        setTimeout(function(){
+            $('.tip').className="tip";
+           
+        },4000)
+    }
 }

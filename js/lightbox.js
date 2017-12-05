@@ -85,13 +85,7 @@ window.onload=function(){
         })(i)
         
     }
-    // var imgs=document.querySelectorAll('.modalDiv>img');
-    // var imgArrs=Array.prototype.slice.call(imgs);
-    // for(var l=0;l<4;l++){
-    //     imgArrs[l].addEventListener("mouseover",function(){
-    //         console.log(this)
-    //     })
-    // }
+    
    
 
 
