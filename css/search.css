@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.searchInput{
+    position: relative;
+    width:400px;
+    margin: 20px;
+}
+.inputSty{
+    width:400px;
+    min-height: 40px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline:none;
+    line-height: 40px;
+    border:1px solid cornflowerblue;
+    background-image: url("../img/7.png");
+    background-size:20px 20px;
+    background-repeat: no-repeat;
+    background-position:5% center;
+    text-indent:50px;
+
+}
+.inputSty:focus{
+    border:1.5px solid rgb(54, 178, 250);
+}
+.clearSty{
+    visibility: hidden;
+    position: absolute;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    font-size:26px;
+}
+/* ie10+ 默认x按钮 */
+.inputSty::-ms-clear{
+    display:none;
+}
+/* ie10+ 默认眼睛按钮
+#df::-ms-reveal{
+    display: none;
+} */
+.clearSty:focus,
+.clearSty:hover{
+    cursor:pointer;
+    outline: none;
+}
+.searchInput ul{
+   display: none;
+   list-style-type:none;
+   width: 100%;
+   margin-top:10px;
+}
+.searchInput ul>li{
+    font-size: 24px;
+    line-height:50px; 
+    color:white;
+    text-indent:10px;
+    background-color:cornflowerblue; 
+}
+.searchInput ul>li:focus{
+    outline:none;
+}
+.searchInput ul>li:not(.header){
+    font-size: 20px;
+    line-height: 40px;
+    color:black;
+    text-indent:30px;
+    background-color: rgb(234, 236, 236);
+}
+.searchInput ul>li:not(.header):hover{
+    cursor:pointer;
+    background-color: rgb(163, 205, 230);
+}
