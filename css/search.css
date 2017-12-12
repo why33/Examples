@@ -3,6 +3,7 @@
     margin: 0;
 }
 .searchInput{
+    float: left;
     position: relative;
     width:400px;
     margin: 20px;
@@ -73,4 +74,151 @@
 .searchInput ul>li:not(.header):hover{
     cursor:pointer;
     background-color: rgb(163, 205, 230);
+}
+.searchTable{
+    position: relative;
+    float: left;
+    width: 500px;
+    margin: 20px 50px;
+    
+}
+.inputStyle{
+     -webkit-appearance: none;
+     -moz-appearance: none;   
+     outline: none;
+     width:500px;
+     min-height: 40px; 
+     border:1px solid cornflowerblue;
+     background-image: url("../img/7.png");
+     background-size:20px 20px;
+     background-repeat: no-repeat;
+     background-position:5% center;
+     text-indent:50px;
+}
+.sTClose{
+    position:absolute;
+    display: none;
+    right: 0;
+    top:0;
+    font-size: 30px;
+    outline:none;
+
+}
+.sTClose:hover{
+    cursor: pointer;
+}
+.tables{
+    visibility: hidden;
+    width: 500px;
+    border:1px solid cornflowerblue;
+    margin-top:10px;
+    border-collapse: collapse;
+    text-indent: 10px;
+}
+.tables th{
+    background-color: cornflowerblue;
+    text-align: left;
+    font-size: 20px;
+    line-height: 50px;
+    color: white;
+}
+.tables td{
+    font-size: 18px;
+    line-height: 40px;
+    border-bottom:1px solid cornflowerblue;
+}
+.tables tr{
+    outline: none;
+}
+.tables tr:not(:nth-of-type(1)):hover{
+    cursor:pointer;
+    background-color: rgb(177, 215, 237);
+}
+.tables th::-moz-selection,
+.tables td::-moz-selection{
+    background-color:transparent;
+}
+.tables th::selection,
+.tables td::selection{
+    background-color:transparent;
+}
+.sortDiv{
+    float: left;
+    width: 400px;
+    margin-top:20px;
+    margin-left:20px;
+}
+.sortUp,
+.sortDown{
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    width: 80px;
+    height: auto;
+    font-size: 20px;
+    line-height:40px;
+    color:white;
+    background-color:cornflowerblue;
+    border:none;
+    border-radius: 5px;
+    outline: none;
+    
+}
+.sortUp:hover,
+.sortDown:hover{
+    cursor:pointer;
+    box-shadow:inset 0px 0px 3px gray;
+}
+.sortLi{
+    list-style-type: none;
+    width:200px;
+    border-top:1px solid cornflowerblue;
+    border-right:1px solid cornflowerblue;
+    margin-top:20px;
+}
+.sortLi>li{
+    width: 200px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height:40px;
+    text-indent:10px;
+    border-left: 10px solid cornflowerblue;
+    border-bottom: 1px solid cornflowerblue;
+}
+.sortTable{
+    float: left;
+    width:400px; 
+    margin-top:20px;
+}
+.sortTable>button{
+    padding:5px 20px;
+    border:none;
+    font-size:20px;
+    color:white;
+    outline: none;
+    background-color:cornflowerblue;
+    border-radius: 5px;
+}
+.sortTable>button:hover{
+    cursor: pointer;
+}
+.sortTable>table{
+    width: 100%;
+    border:1px solid cornflowerblue;
+    border-collapse: collapse;
+    margin-top:20px;
+}
+.sortTable>table th{
+    background-color:cornflowerblue;
+    text-align: left;
+    color: white;
+    font-size:20px;
+    line-height:40px;
+    text-indent: 5px;
+}
+.sortTable>table td{
+    border-bottom: 1px solid cornflowerblue;
+    text-indent:15px;
+    line-height:35px;
 }
