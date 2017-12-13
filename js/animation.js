@@ -59,7 +59,6 @@ function progressMove(){
         }else if(styles[0].addRule){
             styles[0].addRule(".progressingback>span::after","display:block;",styles[0].cssRules.length);
         }
-        console.log(styles)
     }else{
         clearInterval(idP);
     }
