@@ -57,13 +57,16 @@
     text-align: center;
     line-height: 30px;
     color:white;
-    background:-webkit-linear-gradient(left,cornflowerblue 0%,rgb(208, 26, 96) 100%);
-    background:-moz-linear-gradient(left,cornflowerblue 0%,rgb(208, 26, 96) 100%);
-    background:-o-linear-gradient(left,cornflowerblue 0%,rgb(208, 26, 96) 100%);
-    background:linear-gradient(left,cornflowerblue 0%,rgb(208, 26, 96) 100%);
-
+    background:-webkit-linear-gradient(left,#6495ED 0%,#D01A60 100%);
+    background:-moz-linear-gradient(left,#6495ED 0%,#D01A60 100%);
+    background:-o-linear-gradient(left,#6495ED 0%,#D01A60 100%);
+    background:-ms-linear-gradient(left,#6495ED 0%,#D01A60 100%);
+    background:linear-gradient(left,#6495ED 0%,#D01A60 100%);
+    -ms-filter: progid:DXImageTransform.Microsoft.Gradient(enabled='true',GradientType=1,startColorStr=#6495ED,endColorStr=#D01A60);
+    filter: progid:DXImageTransform.Microsoft.Gradient(enabled='true',GradientType=1,startColorStr=#6495ED,endColorStr=#D01A60);
 }
 .progressingback>span::after{
+    display: none;
     position: absolute;
     content:"";
     left: 100%;

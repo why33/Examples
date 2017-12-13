@@ -53,15 +53,23 @@ function progressMove(){
         progressNum.innerHTML=proNum+"%";
         spanP.style.width=proNum+"%";
         proNum++;
+        var styles=document.styleSheets;
+        if(styles[0].insertRule){
+            styles[0].insertRule(".progressingback>span::after{display:block;}",styles[0].cssRules.length)
+        }else if(styles[0].addRule){
+            styles[0].addRule(".progressingback>span::after","display:block;",styles[0].cssRules.length);
+        }
+        console.log(styles)
     }else{
         clearInterval(idP);
     }
     
 
 }
+
 function againProgress(){
     proNum=0;
     idP=setInterval(progressMove,50)
-
+    
 }
 
