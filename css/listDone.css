@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.listAll{
+    width: 60%;
+    height:auto;
+    margin: 10px auto;
+}
+.listheader{
+    width: 100%;
+    height:120px;
+    background-color:cornflowerblue;
+}
+.listheader h3{
+    color: white;
+    font-size:26px;
+    line-height: 50px;
+    padding-top: 10px;
+    font-weight: bolder;
+    text-align: center;
+}
+.listSearch{
+    float:left;
+    margin-left: 15%;
+    width: 55%;
+    height:40px;
+    line-height: 50px;
+    font-size:20px;
+    border: none;
+    background-color: white;
+    text-indent: 10px;
+    outline: none;
+    box-shadow: inset 0 0 2px 1px gray;
+}   
+.wraing{
+    border:2px solid red;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    box-sizing: border-box;
+}   
+.listSearch+input{
+    display: inline-block;
+    width: 15%;
+    height:40px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+.listSearch+input:hover{
+    cursor: pointer;
+    background-color:rgb(163, 159, 159);
+    color:white;
+}
+.clear{
+    clear: both;
+}
+.clearSearch{
+    position:relative;
+    display: none;
+    top: -40px;
+    left: 64%;
+    width:6%;
+    height:40px;
+    font-size:22px;
+    line-height: 40px;
+    text-align: center;
+    outline:none;
+}
+.clearSearch:hover{
+    cursor:pointer;
+}
+.listUl{
+    width: 100%;
+    list-style-type: none;
+}
+.listUl>li{
+    position: relative;
+    width: 100%;
+    font-size: 20px;
+    line-height: 40px;
+    text-indent:10%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(181, 178, 178);
+    border-left:1px solid rgb(181, 178, 178);
+    border-right:1px solid rgb(181, 178, 178);
+}
+.listUl>li::-moz-selection{
+    background-color:transparent;
+}
+.listUl>li::selection{
+    background-color: transparent;
+}
+.listUl>li:hover{
+    cursor:pointer;
+    background-color:rgb(218, 218, 218);
+}
+.listUl>li.checked{
+     background-color:gray;
+     color:white;
+     text-decoration: line-through;
+}
+.listUl>li.checked::before{
+    position: absolute;
+    content:"\2713";
+    width: 10%;
+    line-height: 40px;
+    font-weight: bolder;
+    font-size: 22px;
+    color:white;
+    top: 0;
+    left:-6%;
+    
+}
+.listUl>li>span{
+    position:absolute;
+    display: block;
+    top: 0;
+    left:90%;
+    width: 10%;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    text-indent: 0;
+    
+}
+.listUl>li>span:hover{
+    color:cornflowerblue;
+    font-weight: bolder;
+}
