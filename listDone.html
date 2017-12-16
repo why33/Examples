@@ -22,6 +22,36 @@
             <li>rtvzxfh</li>
         </ul>
     </div>
+    <button class="calculatorBut" id="calculatorButS">计算器</button>
+    <div class="calculatorS">
+        <div class="calculatorCont">
+            <div class="answerShow" id="answer_show">0</div>
+            <span class='answerTip'>结果为小数时,小数点后面只显示一位数字</span>
+            <div class="calculatorContent" id="contShow"></div>
+            <div class="calculatorBUT" id="calculatorbuttons">
+                <div data-num="clearAll" id="AC">AC</div>
+                <div data-num='clear' id='CE'>CE</div>
+                <div data-num='/' id='1'>&divide;</div>
+                <div data-num=7 id='2'>7</div>
+                <div data-num=8 id='3'>8</div>
+                <div data-num=9 id='4'>9</div>
+                <div data-num='*' id='5'>&times;</div>
+                <div data-num=4 id='6'>4</div>
+                <div data-num=5 id='7'>5</div>
+                <div data-num=6 id="8">6</div>
+                <div data-num='+' id='9'>+</div>
+                <div data-num=1 id="10">1</div>
+                <div data-num=2 id="11">2</div>
+                <div data-num=3 id="12">3</div>
+                <div data-num='-' id='13'>&minus;</div>
+                <div class="specialBut" id='14' data-num=0>0</div>
+                <div data-num='.' id='15'>.</div>
+                <div data-num='=' id='so'>=</div>
+            </div>
+        </div>
+        <button class="exitCalculator" id="exit">退出</button>
+        <div id="wraing" hidden>运算异常,请检查!</div>
+    </div>
     </body>
     <script src="./js/listDone.js"></script>
 </html>
