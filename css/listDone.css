@@ -159,9 +159,11 @@
     right: 0;
     margin: auto;
     background-color:rgb(75, 73, 73);
+    z-index: 3;
 }
 .calculatorCont{
     position: relative;
+    z-index: 6;
     width:20%;
     height: 500px;
     background:-webkit-linear-gradient(top,rgb(14, 228, 210) 10%,rgb(2, 97, 180) 80%);
