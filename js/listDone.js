@@ -100,7 +100,6 @@ function clickBut(e){
             case "=":
                 try{
                     var answer=eval($('#contShow').innerHTML);
-                    console.log(answer);
                     if(parseInt(answer)==answer){
                         $('#answer_show').innerHTML=answer;
                     }else{
@@ -119,4 +118,20 @@ function clickBut(e){
         $('.calculatorContent').innerHTML+=target.dataset.num;
     }
     
+}
+//下拉菜单
+var divsPull=document.querySelectorAll("#pulldownA div.pullTitle");
+for(var i=0;i<divsPull.length;i++){
+    divsPull[i].addEventListener('click',function(){
+        this.parentElement.classList.toggle('sectionActive');
+        this.querySelector('span').classList.toggle('pullTitle_Span');
+    })
+}
+var divsPull2=document.querySelectorAll('#pulldownA2 div.pullTitle');
+for(var j=0;j<divsPull2.length;j++){
+    divsPull2[j].addEventListener('click',function(){
+        this.querySelector('span').classList.toggle('pullTitle_Span');
+        this.parentElement.classList.toggle("section2A");
+        this.parentElement.querySelector('div.pullCont2').classList.toggle('pullCont2Span');
+    })
 }
