@@ -1,0 +1,315 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.buttons{
+    width:50px;
+    height:50px;
+    margin: 20px;
+    padding:5px 0; 
+    
+}
+.buttonBar{
+    width: 100%;
+    height:10px;
+    background-color:black;
+    margin:5px auto;
+    -webkit-transition: .8s;
+    -moz-transition: .8s;
+    -o-transition: .8s;
+    transition: .8s;
+}
+.buttons:hover{
+    cursor: pointer;
+}
+.buttonChange .buttonBar:nth-of-type(1){
+    -webkit-transform:rotate(45deg) translate(10px,10px);
+    -moz-transform: rotate(45deg) translate(10px,10px);
+    -o-transform: rotate(45deg) translate(10px,10px);
+    -ms-transform: rotate(45deg) translate(10px,10px);
+    transform: rotate(45deg) translate(10px,10px);
+
+}
+.buttonChange .buttonBar:nth-of-type(2){
+    opacity: 0;
+    filter:alpha(opacity=0);
+}
+.buttonChange .buttonBar:nth-of-type(3){
+    -webkit-transform:rotate(-45deg) translate(10px,-10px);
+    -moz-transform: rotate(-45deg) translate(10px,-10px);
+    -o-transform: rotate(-45deg) translate(10px,-10px);
+    -ms-transform: rotate(-45deg) translate(10px,-10px);
+    transform: rotate(-45deg) translate(10px,-10px);
+}
+.menueTip{
+    position: absolute;
+    width:0px;
+    height:110px;
+    overflow: hidden;
+    top:70px;
+    left:70px;
+    opacity:0;
+    filter: alpha(opacity=0);
+    -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -o-transition: 0.8s;
+    transition: 0.8s;
+    
+}
+.menueTipAcitve{
+    width: 15%;
+    opacity: 1;
+    filter: alpha(opacity=1);
+}
+.menueTip>button{
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: rgb(132, 176, 252);
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    font-family: cursive;
+    font-weight: bolder;
+}
+.menueTip>button:nth-of-type(1){
+    margin-bottom: 2px;
+}
+.menueTip>button:active{
+    box-shadow: inset 0 0 1px 0.5px white;
+    background-color: cornflowerblue;
+}
+/* login */
+.loginPage{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: rgba(41, 38, 38, 0.69);
+}
+.loginCont{
+    position: relative;
+    width:25%;
+    height:600px;
+    margin: 100px auto;
+    background-color: white;
+    -webkit-animation: showBack .5s;
+    -moz-animation: showBack .5s;
+    -o-animation: showBack .5s;
+    animation: showBack .5s;
+}
+@-webkit-keyframes showBack{
+    from{
+        width:0;
+        height:0;
+    }
+    to{
+        width:25%;
+        height:600px;
+    }
+}
+@keyframes showBack{
+    from{
+        width:0;
+        height:0;
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    to{
+        width:25%;
+        height:600px;
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+}
+.LoginImg{
+    width:100%;
+    height:300px;
+}
+.LoginImg>img{
+    width:60%;
+    height: 220px;
+    margin:40px 20%;
+    border-radius: 50%;
+}
+.closeLogin{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top:1%;
+    right:2%;
+    line-height: 30px;
+    font-size:50px;
+    
+}
+.closeLogin:hover{
+    cursor: pointer;
+    text-shadow: 0 0 10px blue;
+}
+.loginMessage{
+    list-style-type: none;
+}
+.loginMessage>li{
+    width:92%;
+    margin:10px 4%;
+    line-height:30px;
+    font-weight: bolder;
+}
+.loginMessage>li>input{
+    display: block;
+    width: 100%;
+    height: auto;
+    font-size:14px;
+    line-height: 32px;
+    text-indent: 10px;
+    outline: none;
+    border: 1px solid rgb(196, 195, 195);
+}
+.loginMessage>li>input:focus{
+    border-bottom: 1px solid cornflowerblue;
+}
+.loginMessage>li>label{
+    position: relative;
+    top:-10px;
+    font-weight: 400;
+    line-height:5px;
+    font-size: 12px;
+    vertical-align: middle;
+    cursor:pointer;
+}
+.loginMessage>li>span{
+    font-weight: 400;
+    float: right;
+    font-size: 12px;
+    cursor: pointer;
+}
+.loginMessage>li>label>input{
+    vertical-align: middle;
+}
+.submitBut{
+    font-size:30px; 
+    height: 50px;
+    line-height: 35px;
+    background-color: cornflowerblue;
+    border:none;
+    color: white;
+    cursor: pointer;
+}
+.submitBut:active{
+    background-color: rgb(13, 125, 218);
+}
+.forgotBut{
+    float:right;
+    font-size: 14px;
+    color: rgb(129, 123, 123);
+    text-decoration: underline;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.loginMessage>li::-moz-selection,
+.forgotBut::-moz-selection,
+.loginMessage>li>label::-moz-selection{
+    background-color: transparent;
+}
+.loginMessage>li::selection,
+.forgotBut::selection,
+.loginMessage>li>label::selection{
+    background-color: transparent;
+}
+/* registerPage */
+.registerPage{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color:rgba(41, 38, 38, 0.69);
+}
+.closeRegis{
+    position: absolute;
+    top: 14%;
+    left:61%;
+    width:40px;
+    height:40px;
+    line-height:35px;
+    text-align: center;
+    background-color: white;
+    color: cornflowerblue;
+    font-weight: bolder;
+    font-size:40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.registerCont{
+    width:25%;
+    height:400px;
+    margin:8% auto;
+    background-color:white;
+    list-style-type: none;
+}
+.registerCont>li:not(.registHead){
+    width:92%;
+    margin: 10px auto;
+    font-size:18px;
+    font-weight:600;
+    margin-bottom:10px;
+}
+.registHead{
+    width:100%;
+    height:80px;
+    font-size:40px;
+    font-weight: bolder;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    line-height:80px;
+    color: transparent;
+    background:-webkit-linear-gradient(left,cornflowerblue 30%,blue 100%);
+    background: -moz-linear-gradient(left,cornflowerblue 30%,blue 100%);
+    background: -ms-linear-gradient(left,cornflowerblue 30%,blue 100%);
+    background: -o-linear-gradient(left,cornflowerblue 30%,blue 100%);
+    background: linear-gradient(left,cornflowerblue 30%,blue 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.registerCont>li>input{
+    width: 100%;
+    font-size: 14px;
+    line-height:25px;
+    text-indent: 10px;
+    border: 1px solid rgb(172, 167, 167);
+}
+.registerCont>li>span{
+    float: right;
+    height: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(49, 48, 48);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.registerCont>li>button{
+    float:left;
+    width: 50%;
+    font-size:20px;
+    line-height:40px;
+    color:white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.registerCont>li>button:nth-of-type(1){
+    background-color: cornflowerblue;
+}
+.registerCont>li>button:nth-of-type(2){
+    background-color: yellowgreen;
+}
+.registerCont>li>button:active{
+    box-shadow: inset 0 0 2px 1px gray;
+}

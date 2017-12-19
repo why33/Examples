@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>menuButton</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./css/menuButton.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="buttons" id="buttonActive">
+            <div class="buttonBar"></div>
+            <div class="buttonBar"></div>
+            <div class="buttonBar"></div>
+        </div>
+        <div class="menueTip" id="menuActive">
+            <button id="login">登录</button>
+            <button id="registerPage">注册</button>
+        </div>
+        <div class='loginPage'>
+            <div class="loginCont">
+                <div class="LoginImg">
+                    <img src='./img/2.jpg'/>
+                </div>
+                <span class="closeLogin" id="closelogin">&times;</span>
+                <ul class="loginMessage">
+                    <li>Username
+                        <input type="text" placeholder="Enter Username" name="username"/>
+                    </li>
+                    <li>Password
+                        <input type="password" placeholder="Enter Password" name="password"/>                        
+                    </li>
+                    <li>
+                        <label><input type="checkbox"/> Remember</label>
+                        <span id="clearAllLogin">Clear All</span>
+                    </li>
+                    <li>
+                        <input type="button" value="Login" class="submitBut" name="loginButton"/>
+                    </li>
+                    <li>
+                        <span class="forgotBut">Forgot Password</span>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="registerPage">
+            <span class="closeRegis">&times;</span>
+            <ul class="registerCont">
+                <li class="registHead">注册</li>
+                <li>Username
+                    <input type="text" name="username" placeholder="Enter Username"/>
+                </li>
+                <li>Password
+                    <input type="password" name="password" placeholder="Enter Password"/>
+                </li>
+                <li>Repeat Password
+                    <input type="password" name="password" placeholder="Repeat Password"/>
+                </li>
+                <li>
+                    <span id="clearR">Clear All</span>
+                </li>
+                <li style="clear:both;"></li>
+                <li>
+                    <button>Sign Up</button>
+                    <button>Cancel</button>
+                </li>
+                
+            </ul>
+        </div>
+    </body>
+    <script src="./js/menuButton.js"></script>
+</html>
